@@ -14,28 +14,28 @@
 </head>
 
 <body class="bg-gray-100">
-   <!--------------------COMPONENT 1---------------------------->
-  <div>
-   <div class="bg-white mx-auto"> 
+   <!--------------------COMPONENT 1 (header)---------------------------->
+   <section class="bg-white mx-auto"> 
        <!-- Main container with navigation and header content -->
         <!---------------LOGO----------------->
       <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
         <div class="px-4">
             <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
-        </div>
+        </div> <!--/logo-->
+
         <!-------------NAVIGATION LINKS---------------------->
           <div class="hidden md:flex items-center justify-between text-black gap-12">
             <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#product">Products</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#features">Features</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#pricing">Pricing</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#company">Company</a>
-           </div>
+           </div> <!--/nav links-->
 
-    <!----------------LOGIN/SIGNUP----------------------->
+    <!-------------------LOGIN/SIGNUP----------------------->
            <div class="hidden gap-8 p-4 items-center md:flex">
                 <button class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Log In</button>
                 <button class=" px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500" >Sign Up</button>
-            </div>
+            </div> <!--/login/signup-->
 
          <!----HAMBURGER---->
            <button class="p-4 md:hidden" id="mobile-menu-toggle">
@@ -49,7 +49,7 @@
                     </clipPath>
                  </defs>
               </svg>
-           </button>
+           </button> <!--/hamburger-->
 
  <!-----------------------MOBILE SCREEN--------------------------->
         <div class=" hidden absolute md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
@@ -60,29 +60,41 @@
               <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#company">Company</a>
             <!--------------LOGIN/SIGNUP MOBILE----------------------->
               <button class="text-sm font-normal text-black hover:text-dark-grey-900">Log In</button>
-              <button class=" px-4 py-2 text-sm font-bold text-purple-600 bg-blue-100 rounded-xl hover:bg-pink-500" >Sign Up</button>
-            
+              <button class=" px-4 py-2 text-sm font-bold text-purple-600 bg-blue-100 rounded-xl hover:bg-pink-500" >Sign Up</button>           
         </div>
+ <!-------------------------/mobile screen------------------------------>
       </div>
-  </div>
+   </section> 
+   <!------------------/header---------------------------------------------->
+  
+   <!--------------------COMPONENT 2 (hero and endorsment)---------------------------->
+        <!--------------------HERO---------------------->  
+   <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 md:gap-5 xl:gap-14 lg:p-4">
 
-        <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-        </div>
-        <div class="container mx-auto">
-        <!-- Centered container for more content -->
-        </div>
-        <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-        </div>
-        <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-        </div>
-  </div>
-   <!--------------------COMPONENT 2---------------------------->
-   <div class="container mx-auto" id="product">
-
-   </div>
+    <div class="flex flex-col justify-center col-span-1 text-center lg:items-start lg:justify-start lg:text-start">
+       <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+          The Clever Place to Keep Your Cache
+       </h1>
+       <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+          Cache Bank is designed exclusively for software developers. We understand your financial needs are as unique as the code you write. Our services offer cutting-edge financial solutions that help you take care of your cash.
+       </p>
+       
+       <div class="flex flex-col items-center gap-4 lg:flex-row">
+          <button class="flex items-center px-7 py-4 text-sm font-bold text-white focus:ring-4 focus:ring-purple-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+            Join Cache Now
+          </button>
+          <button class="flex items-center px-7 py-4 text-sm font-bold text-white focus:ring-4 focus:ring-purple-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+            Join Our Discord Server
+          </button> 
+       </div>
+    </div>
+<!---image--->
+      <div class="items-center justify-end hidden col-span-1 md:flex ">
+        <img class="w-4/5 rounded-md" src="./assets/component-2/hero-image.png" alt="cartoon of woman on a laptop with money around her">
+      </div>
+   </section>
+<!----------------------------------/HERO----------------------------------------->
+   
     <!--------------------COMPONENT 3---------------------------->
     <div class="container mx-auto" id="features">
 
