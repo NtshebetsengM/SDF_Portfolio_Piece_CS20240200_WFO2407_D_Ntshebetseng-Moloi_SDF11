@@ -22,20 +22,19 @@
         <div class="px-4">
             <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
         </div> <!--/logo-->
-
-        <!-------------NAVIGATION LINKS---------------------->
-          <div class="hidden md:flex items-center justify-between text-black gap-12">
+    
+        <!-----------------------MOBILE SCREEN--------------------------->
+        <div class=" hidden absolute md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
+          <!-------------NAV MOBILE LINKS---------------------->
             <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#product">Products</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#features">Features</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#get-started">Get Started</a>
             <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#contact">Contact</a>
-           </div> <!--/nav links-->
-
-    <!-------------------LOGIN/SIGNUP----------------------->
-           <div class="hidden gap-8 p-4 items-center md:flex">
-                <button class="text-sm font-normal text-dark-grey-700 hover:text-pink-500">Log In</button>
-                <button class=" px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500 transition duration-300" >Sign Up</button>
-            </div> <!--/login/signup-->
+          <!--------------LOGIN/SIGNUP MOBILE----------------------->
+            <button class="text-sm font-normal text-black hover:text-pink-500">Log In</button>
+            <button class=" px-4 py-2 text-sm font-bold text-purple-600 bg-blue-100 rounded-xl hover:bg-pink-500 transition duration-300" >Sign Up</button>           
+      </div>
+<!-------------------------/mobile screen------------------------------>
 
          <!----HAMBURGER---->
            <button class="p-4 md:hidden" id="mobile-menu-toggle">
@@ -51,18 +50,18 @@
               </svg>
            </button> <!--/hamburger-->
 
- <!-----------------------MOBILE SCREEN--------------------------->
-        <div class=" hidden absolute md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
-            <!-------------NAV MOBILE LINKS---------------------->
-              <a class="text-sm  font-normal text-dark-grey-700 hover:text-pink-500" href="#product">Products</a>
-              <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#features">Features</a>
-              <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#get-started">Get Started</a>
-              <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#contact">Contact</a>
-            <!--------------LOGIN/SIGNUP MOBILE----------------------->
-              <button class="text-sm font-normal text-black hover:text-pink-500">Log In</button>
-              <button class=" px-4 py-2 text-sm font-bold text-purple-600 bg-blue-100 rounded-xl hover:bg-pink-500 transition duration-300" >Sign Up</button>           
-        </div>
- <!-------------------------/mobile screen------------------------------>
+  <!-------------NAVIGATION LINKS MEDIUM & LARGE---------------------->
+          <div class="hidden md:flex items-center justify-between text-black gap-12">
+            <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#product">Products</a>
+            <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#features">Features</a>
+            <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#get-started">Get Started</a>
+            <a class="text-sm font-normal text-dark-grey-700 hover:text-pink-500" href="#contact">Contact</a>
+           </div> <!--/nav links-->
+           <!-------------------LOGIN/SIGNUP----------------------->
+           <div class="hidden gap-8 p-4 items-center md:flex">
+                <button class="text-sm font-normal text-dark-grey-700 hover:text-pink-500">Log In</button>
+                <button class=" px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500 transition duration-300" >Sign Up</button>
+            </div> <!--/login/signup-->
       </div>
    </section> 
    <!-----------/header------------>
@@ -347,7 +346,7 @@
  </div>
 
 
- <!--------------------COMPONENT 5---------------------------->
+ <!--------------------COMPONENT 5(contact and footer)---------------------------->
       <!--contact-->
  <div class="w-full" id="contact">
     <!--grid container-->
